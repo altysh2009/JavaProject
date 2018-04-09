@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="51.0" prefWidth="1024.0" style="-fx-background-color: #204622;" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="58.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Aya/Documents/NetBeansProjects/project/JavaProject/JavaProject/src/screens/setpassword/hhh.PNG" />
+               </image>
+            </ImageView>
+         </items></ToolBar>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #d4e8c0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Security Question">
+               <VBox.margin>
+                  <Insets left="400.0" top="100.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets left="133.0" right="133.0" top="17.0" />
+               </VBox.margin>
+            </Separator>
+            <Label prefHeight="38.0" prefWidth="148.0" text="Mail">
+               <VBox.margin>
+                  <Insets left="490.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="textMail" focusTraversable="false" prefHeight="31.0" prefWidth="319.0" promptText="Enter your mail...." style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="350.0" top="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="labelErrorMail" prefHeight="28.0" prefWidth="149.0" textFill="#e40b0b">
+                     <HBox.margin>
+                        <Insets left="50.0" top="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="Question">
+               <VBox.margin>
+                  <Insets left="480.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboQuestoin" prefHeight="31.0" prefWidth="321.0" promptText="Question....">
+               <VBox.margin>
+                  <Insets left="350.0" right="200.0" top="20.0" />
+               </VBox.margin>
+            </ComboBox>
+            <Label prefHeight="35.0" prefWidth="84.0" text="Answer">
+               <VBox.margin>
+                  <Insets left="480.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textAnswer" focusTraversable="false" prefHeight="103.0" prefWidth="424.0" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+               <VBox.margin>
+                  <Insets left="300.0" right="300.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Label fx:id="labelErrorAnswer" prefHeight="27.0" prefWidth="278.0" textFill="#c62626">
+               <VBox.margin>
+                  <Insets left="400.0" right="200.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="88.0" prefWidth="1024.0">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="21.0" prefWidth="254.0" text="your password is :">
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelPass" prefHeight="21.0" prefWidth="244.0" textFill="#d32626">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buttonOk" mnemonicParsing="false" onAction="#OKSend" style="-fx-background-color: #204622; -fx-background-radius: 100;" text="OK" textFill="#f8f8f8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="buttonBack" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #204622;" text="back Login" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="450.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="passLabel" textFill="#e80a0a">
+               <VBox.margin>
+                  <Insets left="500.0" top="30.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

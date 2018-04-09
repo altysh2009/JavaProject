@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="53.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="45.0" prefWidth="800.0" style="-fx-background-color: #204622;">
+               <items>
+                  <ImageView fitHeight="70.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/Aya/Documents/NetBeansProjects/project/JavaProject/JavaProject/src/screens/forthscreen/friends/hhh.PNG" />
+                     </image>
+                  </ImageView>
+               </items>
+            </ToolBar>
+            <ToolBar layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="123.0" style="-fx-background-color: #204622;" />
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <Pane prefHeight="686.0" prefWidth="667.0" style="-fx-background-color: #d4e8c0;" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listChat" focusTraversable="false" layoutX="15.0" layoutY="85.0" prefHeight="339.0" prefWidth="380.0" />
+            <TextField fx:id="textMsg" focusTraversable="false" layoutX="10.0" layoutY="437.0" prefHeight="68.0" prefWidth="235.0" promptText="send a massege......" style="-fx-background-radius: 100; -fx-font-style: bold;" />
+            <ComboBox fx:id="comboStyle" layoutX="256.0" layoutY="442.0" prefHeight="18.0" prefWidth="68.0" promptText="style" />
+            <ComboBox fx:id="comboColor" layoutX="333.0" layoutY="440.0" prefHeight="16.0" prefWidth="69.0" promptText="color" />
+            <Button fx:id="buttonSend" layoutX="296.0" layoutY="473.0" mnemonicParsing="false" onAction="#send" onKeyPressed="#enterKey" prefHeight="39.0" prefWidth="94.0" style="-fx-background-color: #204622;" text="Send" textFill="WHITE" />
+            <Label fx:id="labelName" layoutX="131.0" layoutY="19.0" prefHeight="48.0" prefWidth="388.0" text="Aya Mohamed">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Circle fx:id="circlePic" fill="WHITE" layoutX="45.0" layoutY="42.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Button fx:id="buttonBack" focusTraversable="false" layoutX="323.0" layoutY="17.0" mnemonicParsing="false" onAction="#goTOprof" prefHeight="46.0" prefWidth="61.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #204622;" text="&lt;&lt;" textFill="WHITE" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <Pane prefHeight="686.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textSearch" focusTraversable="false" layoutX="14.0" layoutY="16.0" prefHeight="50.0" prefWidth="361.0" promptText="search for chat....." style="-fx-background-radius: 100; -fx-border-radius: 100;" />
+            <ListView fx:id="listPeople" focusTraversable="false" layoutX="27.0" layoutY="70.0" prefHeight="439.0" prefWidth="347.0" />
+            <Button fx:id="save" layoutX="331.0" layoutY="461.0" mnemonicParsing="false" onAction="#onSave" text="save" />
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

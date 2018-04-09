@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverscreens.OnlinePaneController">
+   <children>
+      <Label fx:id="label" layoutX="180.0" layoutY="36.0" prefHeight="17.0" prefWidth="225.0" />
+      <ListView fx:id="listView" layoutX="29.0" layoutY="69.0" prefHeight="376.0" prefWidth="576.0" />
+      <Label layoutX="227.0" layoutY="28.0" prefHeight="36.0" prefWidth="166.0" text="Online Now " textFill="#00695c">
+         <font>
+            <Font name="Calibri" size="31.0" />
+         </font>
+      </Label>
+      <Circle fill="#5aff57" layoutX="188.0" layoutY="49.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

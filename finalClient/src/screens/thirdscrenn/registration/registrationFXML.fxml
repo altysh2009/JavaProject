@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1024.0" style="-fx-background-color: #d4e8c0;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="648.0" prefWidth="784.0" style="-fx-background-color: #9fd38b;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="90.0" right="150.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="114.0" prefWidth="784.0">
+               <children>
+                  <Circle fx:id="circleImg" fill="#f2f2f2" radius="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <TextField fx:id="textFieldName" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Enter your Name..." style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="30.0" top="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="784.0">
+               <children>
+                  <Button fx:id="buttonAddImg" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: #197319;" text="+" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField fx:id="textFieldEmail" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Enter your Email...." style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="40.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="labelErrorMail" prefHeight="42.0" prefWidth="197.0" textFill="#e81515">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="59.0" prefWidth="784.0">
+               <children>
+                  <PasswordField fx:id="textFieldPass" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Enter your password" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </PasswordField>
+                  <Label fx:id="labelErrorPass" prefHeight="42.0" prefWidth="226.0" textFill="#e11010">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="63.0" prefWidth="784.0">
+               <children>
+                  <PasswordField fx:id="textFieldCpass" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Confirm password" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </PasswordField>
+                  <Label fx:id="labelErrorCPass" prefHeight="42.0" prefWidth="226.0" textFill="#e11010">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="784.0">
+               <children>
+                  <ComboBox fx:id="comboBoxCountry" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Country" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="784.0">
+               <children>
+                  <ComboBox fx:id="comboBoxGender" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Gender" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="58.0" prefWidth="784.0">
+               <children>
+                  <ComboBox fx:id="comboBoxQuestion" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="Select your Question?" style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Label fx:id="labelErrorQuestion" prefHeight="42.0" prefWidth="228.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="66.0" prefWidth="784.0">
+               <children>
+                  <TextField fx:id="textFieldAnswer" focusTraversable="false" prefHeight="44.0" prefWidth="404.0" promptText="your answer..." style="-fx-background-radius: 100; -fx-border-radius: 100;">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="labelErrorAnswer" prefHeight="42.0" prefWidth="228.0" textFill="#eb1a1a">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="buttonSignup" mnemonicParsing="false" prefHeight="55.0" prefWidth="179.0" style="-fx-background-radius: 100; -fx-background-color: #197319;" text="Sign up" textFill="#f5f5f5">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="250.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Pane prefHeight="53.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="-2.0" prefHeight="40.0" prefWidth="1024.0">
+               <children>
+                  <ToolBar prefHeight="45.0" prefWidth="1031.0" style="-fx-background-color: #204622;">
+                     <items>
+                        <ImageView fitHeight="70.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Aya/Documents/NetBeansProjects/project/JavaProject/JavaProject/src/screens/thirdscrenn/registration/hhh.PNG" />
+                           </image>
+                        </ImageView>
+                     </items>
+                  </ToolBar>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

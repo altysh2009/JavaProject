@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/rmi/implementation/ServerImpl.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/dao/ClientDao.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/rmi/interfaces/ServerRmi.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/rmi/interfaces/ClientRmi.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/ServerScreen/ServerView.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/ServerScreen/NotificationFXMLController.java</file>
+            <file>file:/C:/Users/Hagar/Documents/NetBeansProjects/ProjectServer/src/objRmi/client/Client.java</file>
+        </group>
+        <group name="JavaProject">
+            <file>file:/D:/Team%207/Hola%20Final%20Project/ProjectServer/src/dao/ClientDao.java</file>
+            <file>file:/D:/Team%207/Hola%20Final%20Project/ProjectServer/src/rmi/implementation/ServerImpl.java</file>
+        </group>
+    </open-files>
+</project-private>

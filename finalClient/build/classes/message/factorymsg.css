@@ -1,0 +1,46 @@
+/*
+ *  Stylesheet file for message.
+ */
+
+
+.SenderLabel{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius:10 10 10 10;
+    -fx-background-color:#d4e8c0;
+    -fx-padding:10;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+}
+
+.RecieverLabel{
+
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius:10 10 10 10;
+    -fx-background-color:#d4e8c0;
+    -fx-padding:10;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+
+
+}
+
+
+
+
+vbox {
+    -fx-background-fills: #2e8b57;
+    -fx-spacing: 8;
+}
+
+
+.UserName{
+    -fx-font-size: 22px;
+    -fx-font-family:"Tahoma";
+    -fx-fill: #818181;
+}
+
+
+
+
+
